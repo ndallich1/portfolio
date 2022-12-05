@@ -19,9 +19,10 @@ header {
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
+  position: relative;
   padding: 20px;
   justify-content: space-between;
-  background-color: rgb(201, 177, 255);
+  background-color: #87A4E7;
   color: antiquewhite;
 }
 
@@ -30,6 +31,14 @@ h1 {
   flex-wrap: wrap;
   margin: 0;
   font-size: 60px;
+}
+
+h2 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  font-size: 32px;
 }
 
 .lastname {
@@ -45,34 +54,101 @@ nav {
   text-transform: uppercase;
 }
 
+nav a:hover {
+  color: #232939;
+}
+
 a {
   text-decoration: none;
+  color: antiquewhite;
 }
 
-ul {
+nav ul {
   list-style: none;
-
 }
 
-li {
-  display: inline;
+nav li {
+  display: inline-block;
   padding: 4px;
 }
 
-main{
+main {
+  display: inline-block;
+}
+
+p {
   display: flex;
+  flex-wrap: wrap;
+  margin: 10px 10px 40px 250px;
+  padding: 0 40px 40px 10px;
+  font-size: 18px;
+}
+
+img {
+  border-radius: 10px;
+  margin: 2px;
+  box-shadow: 2px 2px 5px gray;
+}
+
+img.headshot {
+  height: 250px;
+}
+
+.main-work {
+  display: inline-block;
+  flex-wrap: wrap;
+  width: 99%;
+  height: 300px;
+  object-fit: cover;
+}
+
+
+.work {
+  display: inline-block;
+  flex-wrap: wrap;
+  width: 400px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.title { 
+  display: inline-block;
   flex-wrap: wrap;
 }
 
-p{
- padding: 30px;
-}
-
 aside {
+  display: flex;
+  flex-wrap: wrap;
+  float: left;
   font-weight: 900;
   text-transform: uppercase;
-  padding-right: 20px;
 }
 
-div {
+.box-shadow {
+  box-shadow: inset 5px 0 0 0 #87A4E7;
+}
+
+section {
+  display: block;
+}
+
+footer {
+  display: block;
+  background-color: #87A4E7;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  main,{
+    flex-direction: column;
+  }
+ 
+  header {
+    background: #ff93fa;
+  }
+
+  footer {
+    display: block;
+    background-color: #ff93fa;
+  }
 }
